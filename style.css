@@ -1,0 +1,152 @@
+body{
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  color:white;
+  text-align: center;
+}
+
+h3{
+  padding-top: 20px;
+  text-transform: uppercase;
+  line-height: 0rem;
+  font-weight: 200;
+}
+
+p{
+   font-family: 'Karla', sans-serif;
+   font-size: 15px;
+   line-height: 0.3rem;
+   font-weight: 200;
+ }
+
+span{
+  padding-top: 15px;
+  position:absolute;
+  bottom:40%;
+  height:30px;
+  width:100%;
+  text-align: center;
+}
+
+section{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  height:33%;
+  background-color: #F1E4E8;
+  border-radius: 0px 0px 30px 30px;
+}
+.outer_container{
+  display: grid;
+  position:relative;
+  align-items: center;
+  grid-gap: 1rem;
+  height: 100%;
+  width:100%;
+  background-image: linear-gradient(rgba(40,53,147 ,0.6), rgba(40,53,147 ,0.5)), url('images/background.jpg');
+}
+
+@media (max-width: 960px) {
+.outer_container{
+  background-color: #745C97;
+  background-image: none;
+}
+
+}
+@media (max-width: 720px) {
+  .outer_container{
+  background-color: #D597CE;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .outer_container{
+  background-color: #D597CE;
+  }
+}
+
+
+
+
+
+
+
+.inner_container{
+ display: grid;
+ position:absolute;
+ top:25%;
+ left:25%;
+ grid-gap:30px;
+ grid-auto-rows: auto;
+ grid-gap: 1rem;
+ background: linear-gradient(135deg, rgba(57,55,91,0.91) 0%, rgba(57,55,91,0.94) 30%, rgba(116,92,151,0.97) 63%, rgba(213,151,206,1) 100%);
+ height: 500px;
+ width: 350px;
+ padding: 15px;
+ margin:25px;
+ border-radius: 30px;
+ box-shadow: 4px 3px 45px 2px rgba(57, 55, 91, 0.7);
+}
+
+.profile{
+  padding-top:20%;
+  position:absolute;
+  align-items: center;
+  left:37%;
+}
+
+.profile_image{
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+  border: 4px #F1E4E8 solid;
+  align-items:center;
+  top: -30%;
+  left:45%;
+  filter: grayscale(40%)
+}
+
+.profile_image:hover{
+  filter: grayscale(90%);
+}
+
+.icon {
+  height:20px;
+  width:20px;
+  padding-right:10px;
+  padding-left:10px;
+}
+
+.about_me{
+  padding-top: 40px;
+  position:absolute;
+  top:25%;
+  left:30%;
+  align-items: center;
+}
+
+button{
+  position:absolute;
+  align-items: center;
+  left:30%;
+  bottom:25%;
+  z-index:1;
+}
+
+.btn-material-show{
+  background:white;
+  font-family: 'Rubik', sans-serif;
+  color:#D597CE;
+  text-decoration:none;
+  border-radius: 15px;
+  font-size:15px;
+  text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right:27px;
+  padding-left:27px;
+  margin: 25px;
+  box-shadow: 4px 3px 23px -3px rgba(213,151,206,1);
+  text-transform: uppercase;
+ }
